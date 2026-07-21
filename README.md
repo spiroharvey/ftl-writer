@@ -7,7 +7,7 @@ FTL-WRITER's goal is to let you write without distractions and without having to
 It will convert the following document formats to Markdown:
 * MS Word .docx
 * OpenDocument .odt
-* legacy MS Word 1997-2003 (OLE2 compound binary docs)
+* Legacy MS Word 1997-2003
 * WordStar 4
 
 <img width="965" height="674" alt="image" src="https://github.com/user-attachments/assets/32d3c6af-42c1-42cd-9d7e-cec3deadc8e4" />
