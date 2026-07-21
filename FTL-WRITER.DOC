@@ -67,6 +67,14 @@ You can optionally choose to include or not include the dot prefix but FTL-WRITE
 <u>Doc Dir</u> is the default directory where FTL-WRITER will look for and save documents. 
 
 
+## CONVERSIONS
+
+It's possible to load MS Word .docx files, legacy MS Word .doc files, OpenDocument Format .odt files, and WordStar 4 documents. 
+When these are detected, you will be asked to convert it and if you say Yes, then these will be converted to Markdown and a copy saved as a .md file.
+Note though that .doc is a generic file extension and not a specific format, so FTL-WRITER will determine what the file actually is and convert if necessary, otherwise just display as-is. 
+
+
+
 ---
 FTL-WRITER is Copyright (c) 2026 by Spiro Harvey
 It is Buy-Me-A-Coffee-Ware. You may use it freely and distribute it, but may not profit from it or include it in a commercial bundle or application without express written consent from Spiro Harvey. 
