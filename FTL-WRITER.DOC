@@ -1,0 +1,74 @@
+# FTL-WRITER DOCUMENTATION
+
+FTL-WRITER is a simple word processor inspired by old DOS word processors like WordStar and WordPerfect. Its main intent is to be used by writers of prose, whether that's fiction/non-fiction, poetry, or articles. As such it sticks to the very basics. You can set headings, mark text as bold, underline, or italic, or horizontal lines.
+Documents are saved in Markdown format. Technically you can use any Markdown formatting marks in your document and they will be saved, but they won't be parsed and displayed in FTL-WRITER if you have Markdown=on.
+And in line with that, documents converted from other formats will lose things like images or table structures. FTL-WRITER will keep all text, but will ignore structure that isn't bold, italic, underline, headings, and lists.
+FTL-WRITER's goal is to let you write without distractions and without having to fight your word processor.
+
+## FEATURES
+
+Pressing F1 will pull down a menu showing you the options, including key shortcuts, and configuration settings. Modifying these settings from their defaults will save a config file in your home directory called ~/.ftl-writer which is easily editable by you and is in a simple key = value format.
+The Function keys should be fairly straight forward to understand, Open opens a file, Save saves the current file, New Document clears the current document and starts a fresh one.
+
+### FILE BROWSER
+
+F5 View Files opens a file browser allowing you to browse for and open documents.
+The browser will start in your configured Doc Dir, but will remember where you are each session. Next time you load FTL-WRITER, it will start you back in your configured Doc Dir.
+Navigate using left/right arrow keys, or pressing Enter to select a folder or a document. Left arrow key will always go to the parent directory, regardless where you are when browsing. 
+Right arrow will only go forward a directory if you have that directory highlighted.
+
+Settings that affect the File Browser are:
+-Hidden Dirs
+-Doc Dir
+-Extensions
+
+<u>Hidden Dirs</u> defaults to on. This will include directories starting with '.' in your listings. If you don't want to see these, set this to off.
+
+<u>Extensions</u> defaults to .md,.docx,.odt, but can be configured to whatever you want, including * for all files. When updating this list, separate extensions by a comma. The dot is optional, and extensions are case insensitive, so .doc will also show files ending in .DOC, .Doc, etc.
+
+<u>Doc Dir</u> is your starting document directory. This will be where FTL-WRITER starts looking and saving files to by default each time you load it. 
+
+### BASIC EDITING
+
+FTL-WRITER allows you to copy, cut, paste, and delete whole lines with Ctrl-C, Ctrl-X, Ctrl-V, and Ctrl-Y respectively. 
+Deleting a line just deletes the visible line on the screen, not the whole paragraph up to a newline. If you want to delete a whole paragraph, use the Block functions.
+Copy and cut work on selected blocks.
+
+### BLOCKS
+
+Blocks are "marked" by pressing F8 or Ctrl-K at the point you want to start your block, moving to the last character and pressing F8 or Ctrl-K again. From here you can press B to make that selection bold, U for underline, I for italic. If you have Markdown on in your settings, these will display appropriately.
+Pressing 1-4 will change the first line of that block in a heading of that depth. In Markdown, these are prepended with # characters. A single # is considered an H1 or first level header. 2, a 2nd level, and so on. Because there's no good way of showing these in different font sizes in a terminal display, they are left as is for display purposes. But if you were to load the document in a graphical Markdown reader, then they would display appropriately proportioned.
+When a block is selected, you may also choose to Copy (Ctrl-C) or Cut (Ctrl-X). Then move the cursor to where you want that pasted, and press Ctrl-V to Paste it in.
+
+### SETTINGS
+
+A few other settings you can adjust are setting tab width, showing a wordcount, automatically indenting paragraphs, backups, and auto saving.
+
+<u>Auto Save</u> defaults to off (0 minutes), but can be set to any number of minutes you choose. Current document will automatically save at those intervals.
+
+<u>Backups</u> defaults to off. If you set it on, each time you save the document, the previous one will be moved to <filename>.BAK. 
+
+<u>Wordcount</u> defaults to on. This shows a wordcount in the top title bar. Turning it off will have the results you probably expect.
+
+<u>Hidden Dirs</u> defaults to on. This shows directories starting with dot "." in the file browser. Usually these are configuration directories, so some folk may want to turn that off.
+
+<u>Indent</u> defaults to on. This displays an indent at the start of every paragraph. Note, this is only for display purposes and is separate to Markdown on/off. Paragraphs will be saved without the indents in the document file as indented lines in Markdown are considered "code" and will display in a monospace font with graphical Markdown viewers. 
+Also note that paragraphs are saved with blank lines between them as per the Markdown spec, but they just don't display as such on the screen. On screen, it's designed to look like a book. 
+
+<u>Markdown</u> defaults to on. This will show bold, italic, and underlines. Turning it off will just show the raw Markdown codes.
+
+<u>Tabs</u> defaults to 4 and is the number of characters shifted when you press the Tab key.
+
+<u>Wrap</u> defaults to on. This will wrap words at the screen boundary. Turning it off will display literally one line of text up to a newline character as one single line on the screen. Turning it off will make it difficult to read and edit because terminals don't have horizontal scroll bars, but you do you.
+
+<u>Extensions</u> defaults to .md,.docx,.odt. These are the files that are shown in the file browser so that you can focus on just seeing the documents you want. This can set this to any list of extensions, including * to list all files. Note, this only applies to files, not directory names. 
+You can optionally choose to include or not include the dot prefix but FTL-WRITER will always assume it's there. You could set your extensions list to md,doc and it will assume \*.md and \*.doc. 
+
+<u>Doc Dir</u> is the default directory where FTL-WRITER will look for and save documents. 
+
+
+---
+FTL-WRITER is Copyright (c) 2026 by Spiro Harvey
+It is Buy-Me-A-Coffee-Ware. You may use it freely and distribute it, but may not profit from it or include it in a commercial bundle or application without express written consent from Spiro Harvey. 
+If you like it, enjoy it, and are able to offer financial support, then please donate at https://buymeacoffee.com/spiroharvey
+
