@@ -4,6 +4,12 @@ FTL-WRITER is a simple terminal-based word processor inspired by old DOS word pr
 
 FTL-WRITER's goal is to let you write without distractions and without having to fight your word processor.
 
+It will convert the following document formats to Markdown:
+* MS Word .docx
+* OpenDocument .odt
+* legacy MS Word 1997-2003 (OLE2 compound binary docs)
+* WordStar 4
+
 <img width="965" height="674" alt="image" src="https://github.com/user-attachments/assets/32d3c6af-42c1-42cd-9d7e-cec3deadc8e4" />
 
 <img width="952" height="677" alt="image" src="https://github.com/user-attachments/assets/89825738-a4fb-4f51-9f05-833c72073597" />
