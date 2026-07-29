@@ -4,6 +4,13 @@ FTL-WRITER is a simple terminal-based word processor inspired by old DOS word pr
 
 FTL-WRITER's goal is to let you write without distractions and without having to fight your word processor.
 
+FTL-WRITER is available for:
+* MacOS (Apple Silicon)
+* MacOS (Intel Silicon)
+* Linux (x64)
+* Amiga (OS 2.x + 3.x) 
+
+
 It will convert the following document formats to Markdown:
 * MS Word .docx
 * OpenDocument .odt
