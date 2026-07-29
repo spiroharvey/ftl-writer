@@ -1,4 +1,4 @@
-<img width="666" height="521" alt="Screenshot 2026-07-28 at 10 04 38 PM" src="https://github.com/user-attachments/assets/878ac3df-4ef8-48b7-abbd-c1aa9577e3dd" />
+
 # FTL-WRITER
 
 FTL-WRITER is a simple terminal-based word processor inspired by old DOS word processors like WordStar and WordPerfect. Its main intent is to be used by writers of prose, whether that's fiction/non-fiction, poetry, or articles. As such it sticks to the very basics. You can set headings, mark text as bold, underline, or italic, or horizontal lines. Documents are saved in Markdown format.
